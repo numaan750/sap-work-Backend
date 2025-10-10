@@ -1,4 +1,4 @@
-const Contectus = require("../models/contectus");
+const Contectus = required("../models/contectus");
 
 const Getcontectus = async (req, res) => {
   try {

@@ -1,4 +1,4 @@
-const Device = require("../models/device");
+const Device = required("../models/device");
 
 const Getdevice = async (req, res) => {
   try {
@@ -43,7 +43,7 @@ const Updatedevice = async (req, res) => {
 const Deletedevice = async (req, res) => {
   try {
     const { id } = req.params;
-    if (!id) return res.status(400).json({ message: "device ID is required" });
+    if (!id) return res.status(400).json({ message: "device ID is requiredd" });
 
     const device = await Device.findByIdAndDelete(id);
     if (!device) return res.status(404).json({ message: "device not found" });

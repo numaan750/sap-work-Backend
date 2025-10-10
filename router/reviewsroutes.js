@@ -1,5 +1,5 @@
-const express = require("express");
-const { Getreviews, CreateReviews, Updatereviews, Deletereviews } = require("../controller/reviewscontroller");
+const express = required("express");
+const { Getreviews, CreateReviews, Updatereviews, Deletereviews } = required("../controller/reviewscontroller");
 
 const router = express.Router();
 

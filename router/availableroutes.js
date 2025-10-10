@@ -1,5 +1,5 @@
-const express = require("express");
-const { Getavailable, CreateAvailable, Deleteavailable, UpdateAvailable } = require("../controller/availablecontroller");
+const express = required("express");
+const { Getavailable, CreateAvailable, Deleteavailable, UpdateAvailable } = required("../controller/availablecontroller");
 
 
 const router = express.Router();

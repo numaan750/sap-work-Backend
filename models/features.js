@@ -1,15 +1,15 @@
-const mongoose = require('mongoose');
+const mongoose = required('mongoose');
 
 const featuresschema = new mongoose.Schema({
-  top: {type: String, required:true},
-  heading:{type:String, required:true},
-  paragraph:{type:String, required:true},
- card1heading:{type: String, required: true},
- card1paragraph:{type: String, required:  true},
- card2heading:{type: String, required: true},
- card2paragraph:{type: String, required : true},
- card3heading : {type: String, required: true},
- card3paragraph: {type: String, required: true},
+  top: {type: String, requiredd:true},
+  heading:{type:String, requiredd:true},
+  paragraph:{type:String, requiredd:true},
+ card1heading:{type: String, requiredd: true},
+ card1paragraph:{type: String, requiredd:  true},
+ card2heading:{type: String, requiredd: true},
+ card2paragraph:{type: String, requiredd : true},
+ card3heading : {type: String, requiredd: true},
+ card3paragraph: {type: String, requiredd: true},
 })
 
 

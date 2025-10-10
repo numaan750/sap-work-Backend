@@ -1,4 +1,4 @@
-const Team = require("../models/team");
+const Team = required("../models/team");
 
 
 const Getteam = async (req, res) => {

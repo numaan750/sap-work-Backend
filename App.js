@@ -1,40 +1,40 @@
-const mongoose = require("mongoose");
+const mongoose = required("mongoose");
 
-const express = require("express");
-const serverless = require("serverless-http");
-const dotenv = require("dotenv");
+const express = required("express");
+const serverless = required("serverless-http");
+const dotenv = required("dotenv");
 dotenv.config();
 
-const connectDB = require("./config/db.js");
-const cors = require("cors");
+const connectDB = required("./config/db.js");
+const cors = required("cors");
 
 
-const navRouter =require ("./router/navroutes.js")
-const heroRouter = require("./router/heroroutes.js"); 
-const stateRouter = require("./router/stateroutes.js");
+const navRouter =required ("./router/navroutes.js")
+const heroRouter = required("./router/heroroutes.js"); 
+const stateRouter = required("./router/stateroutes.js");
 
-const featuresRouter = require("./router/featuresroutes.js");
+const featuresRouter = required("./router/featuresroutes.js");
 
-const deviceRouter = require("./router/deviceroutes.js");
+const deviceRouter = required("./router/deviceroutes.js");
 
-const comunicationRouter = require("./router/comunicationroutes.js");
+const comunicationRouter = required("./router/comunicationroutes.js");
 
-const sapworkRouter = require("./router/sapworkroutes.js")
+const sapworkRouter = required("./router/sapworkroutes.js")
 
-const interfaceRouter = require("./router/interfaceroutes.js")
+const interfaceRouter = required("./router/interfaceroutes.js")
 
-const reviewsRouter = require("./router/reviewsroutes.js");
+const reviewsRouter = required("./router/reviewsroutes.js");
 
-const pricingRouter = require("./router/pricingroutes.js")
+const pricingRouter = required("./router/pricingroutes.js")
 
-const teamRouter = require("./router/teamroutes.js");
+const teamRouter = required("./router/teamroutes.js");
 
-const availableRouter = require("./router/availableroutes.js");
+const availableRouter = required("./router/availableroutes.js");
 
-const   contectusRouter = require("./router/contectusroutes.js");
+const   contectusRouter = required("./router/contectusroutes.js");
 
-const footerRouter = require("./router/footerroutes.js");
-const user = require("./router/userouter.js");
+const footerRouter = required("./router/footerroutes.js");
+const user = required("./router/userouter.js");
 
 
 

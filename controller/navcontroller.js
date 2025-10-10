@@ -1,4 +1,4 @@
-const Navbar = require("../models/navbar");
+const Navbar = required("../models/navbar");
 
 
 const Getnavbar = async (req, res) => {

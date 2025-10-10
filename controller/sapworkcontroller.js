@@ -1,4 +1,4 @@
-const Sapwork = require("../models/sapwork")
+const Sapwork = required("../models/sapwork")
 
 const Getsapwork = async (req, res) => {
   try {
@@ -47,7 +47,7 @@ const Updatesapwork = async (req, res) => {
 const Deletesapwork = async (req, res) => {
   try {
     const {id} = req.params;
-    if(!id) return res.status(400).json({ message: "sapwork ID is required"});
+    if(!id) return res.status(400).json({ message: "sapwork ID is requiredd"});
 
     const sapwork = await Sapwork.findByIdAndDelete(id);
     if(!sapwork)

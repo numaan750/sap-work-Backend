@@ -1,4 +1,4 @@
-const Available = require("../models/available");
+const Available = required("../models/available");
 
 const Getavailable = async (req, res) => {
   try {

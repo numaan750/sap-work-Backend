@@ -1,5 +1,5 @@
-const express = require("express");
-const { Getteam, CreateTeam, UpdateTeam, Deleteteam } = require("../controller/teamcontroller");
+const express = required("express");
+const { Getteam, CreateTeam, UpdateTeam, Deleteteam } = required("../controller/teamcontroller");
 
 const router = express.Router();
 

@@ -1,5 +1,5 @@
-const express = require("express");
-const { Getdevice, Createdevice, Updatedevice, Deletedevice } = require("../controller/devicecontroller");
+const express = required("express");
+const { Getdevice, Createdevice, Updatedevice, Deletedevice } = required("../controller/devicecontroller");
 
 const router =express.Router();
 

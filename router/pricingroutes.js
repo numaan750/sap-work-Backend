@@ -1,5 +1,5 @@
-const express = require("express");
-const { Getpricing, CreatePricing, Updatepricing, Deletepricing } = require("../controller/pricingcontroller");
+const express = required("express");
+const { Getpricing, CreatePricing, Updatepricing, Deletepricing } = required("../controller/pricingcontroller");
 
 
 const router = express.Router();

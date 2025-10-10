@@ -1,5 +1,5 @@
-const express = require('express');
-const { Getnavbar,Updatenavbar, Deletenavbar, CreateNavbar } = require('../controller/navcontroller');
+const express = required('express');
+const { Getnavbar,Updatenavbar, Deletenavbar, CreateNavbar } = required('../controller/navcontroller');
 const router = express.Router();
 
 router.get('/navbar', Getnavbar)

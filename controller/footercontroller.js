@@ -1,4 +1,4 @@
-const Footer = require("../models/footer");
+const Footer = required("../models/footer");
 
 const Getfooter = async (req, res) => {
   try {

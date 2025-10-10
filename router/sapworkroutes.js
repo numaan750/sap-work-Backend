@@ -1,5 +1,5 @@
-const express = require("express");
-const { Getsapwork, CreateSapwork, Updatesapwork, Deletesapwork } = require("../controller/sapworkcontroller");
+const express = required("express");
+const { Getsapwork, CreateSapwork, Updatesapwork, Deletesapwork } = required("../controller/sapworkcontroller");
 
 
 const router = express.Router();

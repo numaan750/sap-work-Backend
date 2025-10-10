@@ -1,4 +1,4 @@
-const State = require("../models/state"); // stateSchema import karo
+const State = required("../models/state"); // stateSchema import karo
 
 
 const createState = async (req, res) => {

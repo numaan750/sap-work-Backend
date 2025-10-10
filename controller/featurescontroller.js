@@ -1,4 +1,4 @@
-const Features = require("../models/features");
+const Features = required("../models/features");
 
 const Getfeatures = async (req, res) => {
   try {
@@ -45,7 +45,7 @@ const Updatefeatures = async (req, res) => {
 const Deletefeatures = async (req, res) => {
   try {
     const { id } = req.params;
-    if (!id) return res.status(400).json({ message: "Feature ID is required" });
+    if (!id) return res.status(400).json({ message: "Feature ID is requiredd" });
 
     const feature = await Features.findByIdAndDelete(id);
     if (!feature) return res.status(404).json({ message: "Feature not found" });

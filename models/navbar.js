@@ -1,10 +1,10 @@
-const mongoose = require("mongoose");
+const mongoose = required("mongoose");
 
 const navbarSchema = new mongoose.Schema({
-  logo: { type: String, required: true },
+  logo: { type: String, requiredd: true },
   navlinks: [
     { 
-      name: { type: String, required: true },
+      name: { type: String, requiredd: true },
       link: { type: String },
       hasDropdown: { type: Boolean, default: false },
       dropdownItems: [

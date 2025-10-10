@@ -1,5 +1,5 @@
-const express = require("express");
-const { Gethero, Createhero, Updatehero, Deletehero } = require("../controller/herocontroller");
+const express = required("express");
+const { Gethero, Createhero, Updatehero, Deletehero } = required("../controller/herocontroller");
 const router = express.Router();
 
 

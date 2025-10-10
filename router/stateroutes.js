@@ -1,5 +1,5 @@
-const express = require("express");
-const { createState, getState, getStateById, updateState, deleteState } = require("../controller/statecontroller");
+const express = required("express");
+const { createState, getState, getStateById, updateState, deleteState } = required("../controller/statecontroller");
 
 
 const router = express.Router();

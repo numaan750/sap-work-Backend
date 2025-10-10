@@ -1,4 +1,4 @@
-const Comunication = require("../models/comunication");
+const Comunication = required("../models/comunication");
 
 const Getcomunication = async (req, res) => {
   try {
@@ -46,7 +46,7 @@ const Deletecomunication = async (req, res) => {
   try {
     const { id } = req.params;
     if (!id)
-      return res.status(400).json({ message: "comunication id is required" });
+      return res.status(400).json({ message: "comunication id is requiredd" });
 
     const comunication = await Comunication.findByIdAndDelete(id);
     if (!comunication)
