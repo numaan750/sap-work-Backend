@@ -1,4 +1,4 @@
-const express =require ("express");
+const express = require("express");
 const { Getcomunication, Createcomunication, Updatecomunication, Deletecomunication } = require("../controller/comunicationcontroller");
 
 
