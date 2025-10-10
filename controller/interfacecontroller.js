@@ -1,4 +1,4 @@
-const Interface = required("../models/interface")
+const Interface = require("../models/interface")
 
 const Getinterface = async (req, res) => {
   try {

@@ -1,4 +1,4 @@
-const mongoose = required("mongoose");
+const mongoose = require("mongoose");
 
 const reviewsSchema = new mongoose.Schema({
   toptext: { type: String, default: "" },

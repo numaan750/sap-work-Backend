@@ -1,4 +1,4 @@
-const Pricing = required("../models/pricing");
+const Pricing = require("../models/pricing");
 
 
 const Getpricing  = async (req, res) => {

@@ -1,5 +1,5 @@
-const express = required("express");
-const { Getfooter, CreateFooter, Updatefooter, Deletefooter } = required("../controller/footercontroller");
+const express = require("express");
+const { Getfooter, CreateFooter, Updatefooter, Deletefooter } = require("../controller/footercontroller");
 
 const router = express.Router();
 

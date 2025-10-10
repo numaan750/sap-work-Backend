@@ -1,18 +1,18 @@
-const mongoose = required("mongoose");
+const mongoose = require("mongoose");
 
 const stateSchema = new mongoose.Schema({
 
-  usersCount: {type: String, requiredd: true},
-  usersTitle: {type: String, requiredd: true},
+  usersCount: {type: String, required: true},
+  usersTitle: {type: String, required: true},
 
-  downloadsCount: {type: String, requiredd: true},
-  downloadsTitle: {type: String, requiredd: true},
+  downloadsCount: {type: String, required: true},
+  downloadsTitle: {type: String, required: true},
 
-  customersCount: {type: String, requiredd: true},
-  customersTitle: {type: String, requiredd: true,},
+  customersCount: {type: String, required: true},
+  customersTitle: {type: String, required: true,},
 
-  developersCount: {type: String, requiredd: true},
-  developersTitle: {type: String, requiredd: true},
+  developersCount: {type: String, required: true},
+  developersTitle: {type: String, required: true},
   
 });
 

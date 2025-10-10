@@ -1,4 +1,4 @@
-const Hero = required("../models/hero")
+const Hero = require("../models/hero")
 
 
 const Gethero = async (req, res) => {

@@ -1,6 +1,6 @@
-const User = required("../models/User.js");
-const jwt = required("jsonwebtoken");
-const bcrypt = required("bcrypt");
+const User = require("../models/User.js");
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt");
 
 const Createuser = async (req, res) => {
   try {
@@ -9,20 +9,20 @@ const Createuser = async (req, res) => {
     if (!username) {
       return res.json({
         status: "error",
-        message: "Username requiredd",
+        message: "Username required",
       });
     }
     if (!email) {
       return res.json({
         status: "error",
-        message: "email requiredd",
+        message: "email required",
         
       });
     }
     if (!password) {
       return res.json({
         status: "error",
-        message: "Password requiredd",
+        message: "Password required",
       });
     }
     const found = await User.findOne({ email: email });

@@ -1,12 +1,12 @@
-const mongoose = required("mongoose")
+const mongoose = require("mongoose")
 
 const availableSchema = new mongoose.Schema({
-    backgroundimg:{type:String, requiredd:true},
-    heading:{type:String, requiredd: true},
-    paragraph:{type:String, requiredd:true},
-    img1:{type:String, requiredd:true},
-    img2:{type:String, requiredd:true},
-    copywrite:{type:String, requiredd:true},
+    backgroundimg:{type:String, required:true},
+    heading:{type:String, required: true},
+    paragraph:{type:String, required:true},
+    img1:{type:String, required:true},
+    img2:{type:String, required:true},
+    copywrite:{type:String, required:true},
 })
 
 

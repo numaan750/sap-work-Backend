@@ -1,5 +1,5 @@
-const express = required("express");
-const { Getcontectus, CreateContectus, Updatecontectus, Deletecontectus } = required("../controller/contectuscontroller");
+const express = require("express");
+const { Getcontectus, CreateContectus, Updatecontectus, Deletecontectus } = require("../controller/contectuscontroller");
 
 const router = express.Router();
 

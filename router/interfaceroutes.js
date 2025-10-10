@@ -1,5 +1,5 @@
-const express = required("express");
-const { Getinterface, CreateInterface, Updateinterface, Deleteinterface } = required("../controller/interfacecontroller");
+const express = require("express");
+const { Getinterface, CreateInterface, Updateinterface, Deleteinterface } = require("../controller/interfacecontroller");
 
 const router = express.Router();
 

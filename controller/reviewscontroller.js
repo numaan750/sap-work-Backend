@@ -1,4 +1,4 @@
-const Reviews = required("../models/reviews");
+const Reviews = require("../models/reviews");
 
 const Getreviews = async (req, res) => {
   try {

@@ -1,15 +1,15 @@
-const mongoose = required("mongoose");
+const mongoose = require("mongoose");
 
 const interfaceSchema = new mongoose.Schema({
 
-    toptext: {type: String, requiredd:true},
-    heading: {type:String, requiredd: true},
-    paragraph: {type:String, requiredd: true},
-    img1: {type:String, requiredd: true},
-    img2: {type:String, requiredd: true},
-    img3: {type:String, requiredd: true},
-    img4: {type:String, requiredd: true},
-    img5: {type:String, requiredd: true},
+    toptext: {type: String, required:true},
+    heading: {type:String, required: true},
+    paragraph: {type:String, required: true},
+    img1: {type:String, required: true},
+    img2: {type:String, required: true},
+    img3: {type:String, required: true},
+    img4: {type:String, required: true},
+    img5: {type:String, required: true},
     
 });
 

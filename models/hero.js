@@ -1,13 +1,13 @@
-const mongoose = required('mongoose');
+const mongoose = require('mongoose');
 
 
 const heroschema = new mongoose.Schema({
-  heading: { type: String, requiredd: true },
-  paragraph: { type: String, requiredd: true },
-  image1: { type: String, requiredd: true },
-  image2: { type: String, requiredd: true },   // ✅ fix
-  copyright: { type: String, requiredd: true },// ✅ fix
-  mainimg: { type: String, requiredd: true }
+  heading: { type: String, required: true },
+  paragraph: { type: String, required: true },
+  image1: { type: String, required: true },
+  image2: { type: String, required: true },   // ✅ fix
+  copyright: { type: String, required: true },// ✅ fix
+  mainimg: { type: String, required: true }
   
 });
 

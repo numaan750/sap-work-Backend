@@ -1,5 +1,5 @@
-const express =required ("express");
-const { Getcomunication, Createcomunication, Updatecomunication, Deletecomunication } = required("../controller/comunicationcontroller");
+const express =require ("express");
+const { Getcomunication, Createcomunication, Updatecomunication, Deletecomunication } = require("../controller/comunicationcontroller");
 
 
 const router = express.Router();
