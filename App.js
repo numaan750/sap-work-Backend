@@ -1,10 +1,14 @@
-const express = require("express");
 const mongoose = require("mongoose");
-const Navbar = require("./models/navbar.js"); 
-const connectDB = require("./config/db.js");
-const dotenv = require("dotenv").config();
 
+const express = require("express");
+const serverless = require("serverless-http");
+const dotenv = require("dotenv");
+dotenv.config();
+
+const connectDB = require("./config/db.js");
 const cors = require("cors");
+
+
 const navRouter =require ("./router/navroutes.js")
 const heroRouter = require("./router/heroroutes.js"); 
 const stateRouter = require("./router/stateroutes.js");
@@ -36,18 +40,21 @@ const user = require("./router/userouter.js");
 
 const app = express();
 
+
+
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 
 
-app.use(cors());
+
 // nav api
 connectDB();
-app.use("/api", navRouter)
+app.use('/api', navRouter)
 
 // hero api
-app.use("/api", heroRouter);
+app.use('/api', heroRouter);
 
 // // state api
 app.use("/api", stateRouter);
@@ -89,8 +96,17 @@ app.use("/api", footerRouter)
 //user ki api
 app.use("/api", user)
 
+// health check
+app.get("/", (req, res) => res.send("API is running"));
 
-app.listen(3000, () => {
-  console.log("app running on port 3000");
-});
-module.exports =app
+// Export for Vercel serverless
+module.exports = app;
+module.exports.handler = serverless(app);
+
+// For local development only
+if (process.env.NODE_ENV !== "production") {
+  const port = process.env.PORT || 3000;
+  app.listen(port, () => {
+    console.log(`App running on port ${port}`);
+  });
+}
