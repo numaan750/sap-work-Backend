@@ -101,12 +101,4 @@ app.get("/", (req, res) => res.send("API is running"));
 
 // Export for Vercel serverless
 module.exports = app;
-module.exports.handler = serverless(app);
 
-// For local development only
-if (process.env.NODE_ENV !== "production") {
-  const port = process.env.PORT || 3000;
-  app.listen(port, () => {
-    console.log(`App running on port ${port}`);
-  });
-}
